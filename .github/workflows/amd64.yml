@@ -1,11 +1,11 @@
-name: x86-64 Pull and Save Docker Image
+name: x86-64 Pull and Save Docker Image dockurr/windows
 on:
   workflow_dispatch:
     inputs:
       docker_images:
         description: '请填写docker镜像名称 多个用英文逗号分开'
         required: true
-        default: 'python:latest,python:3.8'  # 设置默认的 Docker 镜像列表
+        default: 'dockurr/windows'  # 设置默认的 Docker 镜像列表
 
 jobs:
   pull_and_package:
